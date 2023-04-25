@@ -9285,7 +9285,7 @@ main {
 }
 
 .aside__collapse {
-  z-index: 10;
+  z-index: 2;
   width: 100%;
 }
 .aside__collapse:not(.show) {
@@ -9361,12 +9361,31 @@ main {
   height: 100px;
   border-radius: 50%;
   border: 4px solid #17a2b8;
-  z-index: 5;
+  z-index: 1;
   transition: transform 0.5s ease-in-out;
 }
 
 .img__contact2:hover {
   transform: scale(1.8);
+}
+
+/*Media ---------------------------------------------------*/
+/* -- Extra Small */
+/* sm Small */
+/* md Medium */
+/* lg Large */
+@media (min-width: 992px) {
+  .img__contact2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #17a2b8;
+    z-index: 3;
+    transition: transform 0.5s ease-in-out;
+  }
+  .img__contact2:hover {
+    transform: scale(1.8);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
