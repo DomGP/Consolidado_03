@@ -9285,7 +9285,7 @@ main {
 }
 
 .aside__collapse {
-  z-index: 1;
+  z-index: 10;
   width: 100%;
 }
 .aside__collapse:not(.show) {
