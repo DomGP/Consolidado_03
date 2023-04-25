@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSOLIDADO 03</title>
+    <script src="https://kit.fontawesome.com/f363d99965.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="grid">
+    <header class="header__navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-paw fa-xl"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contactos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Grupos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Archivos
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Imagenes</a>
+                            <a class="dropdown-item" href="#">Videos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Documentos</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="d-flex flex-column justify-content-start">
+        <p>
+            <button class="btn btn-light contact__btn mt-2" type="button" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Contactos
+            </button>
+        </p>
+        <div class="aside__collapse " id="collapseExample">
+            <div class="card card-body bg-primary">
+                <div class="my-4">
+                    <form class="my-2 my-lg-0 d-flex justify-content-center align-items-center">
+                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Contactos"
+                            aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0 mx-1" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-start align-items-center name__style2" id="nuevoMensaje" onclick="quitarClase()">
+                        <img src="https://placedog.net/500/500?r" class="img__contact mx-2" alt="">
+                        <p class="contact__style mx-2"  >Ignacio</p>
+                        <p class="mx-2 chat__fechayhora">23/04/2023</p>
+                    </div>
+                    <div>
+                        <hr class="hr__style">
+                        </hr>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="https://placedog.net/501/500?r" class="img__contact mx-2" alt="">
+                        <p class="contact__style mx-2">Bucky</p>
+                        <p class="mx-2 chat__fechayhora">23/04/2023</p>
+                    </div>
+                    <div>
+                        <hr class="hr__style">
+                        </hr>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="https://placedog.net/502/500?r" class="img__contact mx-2" alt="">
+                        <p class="contact__style mx-2">Cloud</p>
+                        <p class="mx-2 chat__fechayhora">23/04/2023</p>
+                    </div>
+                    <div>
+                        <hr class="hr__style">
+                        </hr>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="https://placedog.net/503/500?r" class="img__contact mx-2" alt="">
+                        <p class="contact__style mx-2">Obi Wan</p>
+                        <p class="mx-2 chat__fechayhora">23/04/2023</p>
+                    </div>
+                    <div>
+                        <hr class="hr__style">
+                        </hr>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="https://placedog.net/504/500?r" class="img__contact mx-2" alt="">
+                        <p class="contact__style mx-2">Snoopy</p>
+                        <p class="mx-2 chat__fechayhora">23/04/2023</p>
+                    </div>
+                    <div>
+                        <hr class="hr__style">
+                        </hr>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="https://placedog.net/505/500?r" class="img__contact mx-2" alt="">
+                        <p class="contact__style mx-2">Chocobo</p>
+                        <p class="mx-2 chat__fechayhora">23/04/2023</p>
+                    </div>
+                    <div>
+                        <hr class="hr__style">
+                        </hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+    <main>
+        <div class="main__chat">
+            <div class="d-flex justify-content-between align-items-center my-0 main__style">
+                <div class="main__encabezado d-flex justify-content-start align-items-center">
+                    <img src="https://placedog.net/500/500?r" class="img__contact2 mx-2" alt="">
+                    <p class="contact__style mx-2 name__style">Ignacio</p>
+                </div>
+                <div class="btn-group dropleft my-0 py-4 mr-3">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-camera"></i>&nbsp;Camara</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-image"></i>&nbsp;Imagenes</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-video"></i>&nbsp;Videos</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-folder"></i>&nbsp;Documentos</a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <hr class="hr__style">
+                </hr>
+            </div>
+            <div>
+                <div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="https://placedog.net/500/500?r" class="img__contact mx-2" alt="">
+                        <p class="chat__style mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                            inventore
+                            ab consequatur.</p>
+                        <p class="chat__fechayhora">17:00 <span><i class="fa-solid fa-circle-check"></i></span></p>
+
+                    </div>
+                    <p class="contact__style mx-4 name__style">Ignacio</p>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <p class="mr-3 chat__fechayhora">17:15 <span><i class="fa-solid fa-circle-check"></i></span></p>
+                        <p class="chat__style2 mr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                            tempora molestias animi in temporibus.</p>
+                        <img src="https://placedog.net/506/500?r" class="img__contact mr-4" alt="">
+                    </div>
+                    <div>
+                        <p class="contact__style mx-4 d-flex justify-content-end mr-5 name__style">Dom</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-start align-items-center">
+                        <img src="https://placedog.net/500/500?r" class="img__contact mx-2" alt="">
+                        <p class="chat__style mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                            inventore
+                            ab consequatur.</p>
+                        <p class="chat__fechayhora">17:20 <span><i class="fa-solid fa-circle-check"></i></span></p>
+                    </div>
+                    <p class="contact__style mx-4 name__style">Ignacio</p>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-end align-items-center">
+                        <p class="mr-3 chat__fechayhora">17:15 <span><i class="fa-solid fa-circle-check"></i></span></p>
+                        <p class="chat__style2 mr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                            tempora molestias animi in temporibus.</p>
+                        <img src="https://placedog.net/506/500?r" class="img__contact mr-4" alt="">
+                    </div>
+                    <div>
+                        <p class="contact__style mx-4 d-flex justify-content-end mr-5 name__style">Dom</p>
+                    </div>
+                </div>
+
+                <div>
+                    <hr class="hr__style">
+                    </hr>
+                </div>
+            </div>
+            <form class="form__style">
+                <div class="form-group d-flex mx-3">
+                    <input type="email" class="form-control mx-2 py-5 input__style" id="exampleInputEmail1"
+                        placeholder="Escribe un mensaje aquí...">
+                    <button type="submit" class="btn btn-primary mx-2 btn__style">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/logica.js"></script>
+    <script src="assets/js/bootstrap4.6/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
